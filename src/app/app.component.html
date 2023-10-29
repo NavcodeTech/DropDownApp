@@ -1,0 +1,5 @@
+<form [formGroup]="dropform">
+  <app-dropdown [options]="options" (optionSelected)="onOptionSelected($event)"></app-dropdown>
+  <br>
+  <p>Selected Option: {{ dropform.get('selectedOption')?.value }}</p>
+</form>

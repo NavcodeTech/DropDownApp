@@ -1,0 +1,7 @@
+<div class="dropdown">
+    <input type="text" class="form-control" placeholder="Search..." [formControl]="searchTermControl">
+    <div class="dropdown-menu">
+      <a class="dropdown-item" *ngFor="let option of filteredOptions" (click)="selectOption(option)">{{ option }}</a>
+    </div>
+  </div>
+  
